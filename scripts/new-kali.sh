@@ -55,7 +55,7 @@ currentHashAlg=$(grep $currentKaliISO ${tmpDir}/$hashAlg | cut -d ' ' -f 1)
 
 currentKali=$(curl -s $kaliBaseUrl | grep 'kali-' | grep -oE 'href.*' | cut -d '"' -f 2 | cut -d '/' -f 1 | grep -v 'kali-weekly' | tail -n 1 | cut -d '-' -f 2- )
 
-namez="kali-linux_amd64"
+namez="kali-light-linux_amd64"
 
 if [[ -f $secretFileFullPath ]] ; then
 	hashiName=$(grep vagrant_cloud $secretFileFullPath | cut -d ':' -f 2)
