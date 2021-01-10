@@ -49,7 +49,7 @@ variable "provision_plan" {
   # default     = "baremetal_0"
   # DEV
   # default     = "c3.small.x86"
-  default     = "x2.xlarge.x86"
+  default = "x2.xlarge.x86"
   # default = "baremetal_1e"
 }
 
